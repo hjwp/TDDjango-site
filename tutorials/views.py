@@ -2,6 +2,7 @@ from docutils.core import publish_string
 from django.shortcuts import render
 from django.utils.safestring import mark_safe
 import os
+import rst_directive
 ROOT = os.path.split(os.path.dirname(__file__))[0]
 
 PAGE_NUMBERS = [1, 2, 3]

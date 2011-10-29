@@ -14,7 +14,9 @@ of the code from ``test_polls_admin.py``, so you might want to do a "save as"
 based on that file.
 
 Let's start by writing out our FT as human-readable comments, which describe
-the user's actions, and the expected behaviour of the site::
+the user's actions, and the expected behaviour of the site
+
+.. sourcecode:: python
 
     from functional_tests import FunctionalTest, ROOT
     from selenium.webdriver.common.keys import Keys
