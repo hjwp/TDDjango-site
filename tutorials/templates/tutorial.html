@@ -1,6 +1,27 @@
 {% extends 'base.html' %}
+
 {% block title %}TDDjangoTutorial{% endblock %}
 
+{% block header %}
+  <div id="page_title">
+    {% if page_number %}
+      <h1>Test-Driven Django Tutorial (with Selenium) - Part {{page_number}}</h1>
+    {% else %}
+      <h1>Test-Driven Django Tutorial (with Selenium) - Home / About</h1>
+    {% endif %}
+  </div>
+
+  {% include 'navigation.html' %}
+{% endblock header %}
+
+
 {% block content %}
-{{rst_contents}}
+
+  {{rst_contents}}
+
+{% endblock %}
+
+
+{% block footer %}
+  {% include 'navigation.html' %}
 {% endblock %}
