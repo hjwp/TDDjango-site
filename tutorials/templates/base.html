@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>{% block title %}{% endblock %}</title>
+</head>
+
+<body>
+<div id="header">
+  <div id="page_title">
+    <h1>Test-Driven Django Tutorial (with Selenium) - page {{page_number}}</h1>
+  </div>
+  <div id="navigation">
+    <ul>
+      {% for p in page_numbers %}
+      <li><a href="{% url tutorial p %}">Part {{p}}</a></li>
+      {% endfor %}
+  </div>
+</div>
+
+<div id="content">
+{% block content %}
+{% endblock %}
+</div>
+
+<div id="footer">
+  <ul>
+</div>
+
+</body>
+
+</html>
