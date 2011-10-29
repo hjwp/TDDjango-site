@@ -42,7 +42,7 @@
 INLINESTYLES = True
 
 # what colour of syntax highlighting?
-COLOUR_THEME = 'colorful'
+COLOUR_THEME = 'monokai'
 
 from pygments.formatters import HtmlFormatter
 
