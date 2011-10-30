@@ -7,19 +7,24 @@
     <table>
       <tr>
         <td><img src="/static/images/django_pony2.png" alt="The Django Pony" title="The Django Pony" /></td>
+
         <td>
+          <h1>Test-Driven Django Tutorial (with Selenium)</h1>
+
           {% if page_number %}
-            <h1>Test-Driven Django Tutorial (with Selenium) - Part {{page_number}}</h1>
+            <h2>Part {{page_number}}</h2>
           {% else %}
-            <h1>Test-Driven Django Tutorial (with Selenium) - Home / About</h1>
+            <h2>Home / About</h2>
           {% endif %}
+
+          {% include 'navigation.html' %}
         </td>
+
         <td><img src="/static/images/goat_drawing1.png" alt="The Testing Goat" title="The Testing Goat" /></td>
       </tr>
     </table>
   </div>
 
-  {% include 'navigation.html' %}
 {% endblock header %}
 
 
