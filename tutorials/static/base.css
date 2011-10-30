@@ -1,4 +1,4 @@
-#content {
+#content, #footer {
     margin-left: 50px;
     margin-right: 50px;
     font-family: DejaVu Sans Light, serif;
@@ -63,4 +63,7 @@ pre {
     border: 1px solid #d8d8d8; 
     color: black; 
 } 
-
+#footer_links {
+    margin-top: 2ex;
+    text-align: center;
+}
