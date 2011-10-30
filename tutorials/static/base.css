@@ -8,6 +8,17 @@
     font-family: DejaVu Sans Mono, monospace;
 }
 
+pre {
+    white-space: pre-wrap;       /* css-3 */
+    white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+    overflow: auto;
+}
+
+
+
 #content pre {
     font-family: DejaVu Sans Mono, monospace;
 }
@@ -15,8 +26,12 @@
 .document pre.literal-block {
     background: lightgrey;
 }
+#page_title {
+    margin-left: 12%;
+}
 
 #page_title h1, #page_title h2{
+    font-family: DejaVu Sans Light;
     text-align: center;
 }
 
