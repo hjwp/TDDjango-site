@@ -1,4 +1,5 @@
 # Django settings for tddjango_site project.
+import os
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -43,6 +44,7 @@ USE_I18N = True
 # calendars according to the current locale
 USE_L10N = True
 
+PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 # Example: "/home/media/media.lawrence.com/media/"
 MEDIA_ROOT = ''
@@ -68,7 +70,9 @@ STATIC_URL = '/static/'
 ADMIN_MEDIA_PREFIX = '/static/admin/'
 
 # Additional locations of static files
+source_static_dir = os.path.join(PROJECT_ROOT, 'source')
 STATICFILES_DIRS = (
+        source_static_dir,
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.

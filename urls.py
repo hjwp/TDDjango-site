@@ -1,4 +1,6 @@
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.conf.urls.defaults import patterns, url
+
 from tddjango_site.tutorials import views
 
 # Uncomment the next two lines to enable the admin:
@@ -6,8 +8,6 @@ from tddjango_site.tutorials import views
 # admin.autodiscover()
 
 urlpatterns = patterns('',
-    # Examples:
-    # url(r'^$', 'tddjango_site.views.home', name='home'),
     url(r'^$', views.tutorial, name='home'),
     url(r'^tutorial/(\d+)/$', views.tutorial, name='tutorial'),
 
@@ -17,3 +17,5 @@ urlpatterns = patterns('',
     # Uncomment the next line to enable the admin:
     # url(r'^admin/', include(admin.site.urls)),
 )
+# static files via django - not ideal
+# urlpatterns += staticfiles_urlpatterns(),

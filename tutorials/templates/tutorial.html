@@ -4,11 +4,19 @@
 
 {% block header %}
   <div id="page_title">
-    {% if page_number %}
-      <h1>Test-Driven Django Tutorial (with Selenium) - Part {{page_number}}</h1>
-    {% else %}
-      <h1>Test-Driven Django Tutorial (with Selenium) - Home / About</h1>
-    {% endif %}
+    <table>
+      <tr>
+        <td><img src="/static/images/django_pony2.png" alt="The Django Pony" title="The Django Pony" /></td>
+        <td>
+          {% if page_number %}
+            <h1>Test-Driven Django Tutorial (with Selenium) - Part {{page_number}}</h1>
+          {% else %}
+            <h1>Test-Driven Django Tutorial (with Selenium) - Home / About</h1>
+          {% endif %}
+        </td>
+        <td><img src="/static/images/goat_drawing1.png" alt="The Testing Goat" title="The Testing Goat" /></td>
+      </tr>
+    </table>
   </div>
 
   {% include 'navigation.html' %}
