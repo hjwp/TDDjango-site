@@ -1,4 +1,4 @@
-#content, #footer {
+#content, #header, #footer {
     margin-left: 50px;
     margin-right: 50px;
     font-family: DejaVu Sans Light, serif;
@@ -27,7 +27,7 @@ pre {
     background: lightgrey;
 }
 #page_title {
-    margin-left: 12%;
+    margin-left: 5%;
 }
 
 #page_title h1, #page_title h2{
