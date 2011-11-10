@@ -6,7 +6,7 @@ from django.shortcuts import render
 from django.utils.safestring import mark_safe
 ROOT = os.path.split(os.path.dirname(__file__))[0]
 
-PAGE_NUMBERS = [1, 2, 3]
+PAGE_NUMBERS = [1, 2, 3, 4]
 
 def tutorial(request, number=None):
     if number is None:
