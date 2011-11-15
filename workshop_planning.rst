@@ -38,20 +38,35 @@ intro
  - outline
    - set up, make sure everyone has ft runner, project etc (10 mins)
 
-   - first FT - the admin site (136 LOC)
+   - PART 1: BASIC ADMIN SITE - setup admin site, add Poll model (136 LOC)
+
+     - do together.
+
+     - unit testing models
+
+     - __unicode__ (and verbose_name?)
      
-   - second FT part 0 - the inline choices admin (100LOC)
-         (give out Gertrude/inlines part?? ~ 50)
+   - PART 2: HOME PAGE POLLS LISTING
 
-   - second FT part 1 - the polls page (94LOC)
+     - do together.
 
-   - second FT part 2 - poll page, generating the form
-        (give out the unit test?)
+     - pre-prepared: FT + code for inline admin, choice model etc.
 
-   - second FT part 3 - processing the form
-     96
+     - FT specc'd out as comments
 
-   - if time - javascript on button?
+     - (94LOC)
+
+   - PART 3: VOTE ON A POLL
+
+     - free for all, but:
+
+     - give out unit test for poll view 
+
+     - let ppl find their own way around forms.py
+
+   - PART 4: FORM PROCESSING (if time)
+
+     - tbc
 
    - some discussion topics
      - testing philosophy... "testing constants"
