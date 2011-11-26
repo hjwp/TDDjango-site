@@ -119,10 +119,14 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # Uncomment the next line to enable the admin:
-    # 'django.contrib.admin',
-    # Uncomment the next line to enable admin documentation:
-    # 'django.contrib.admindocs',
+    'django.contrib.admin',
+
+    #for django-articles
+    'django.contrib.humanize',
+    'django.contrib.markup',
+    'django.contrib.syndication',
+
+    'articles', # django-articles (blog)
     'tddjango_site.tutorials',
 )
 
@@ -148,3 +152,7 @@ LOGGING = {
         },
     }
 }
+
+#for django-articles
+DISQUS_USER_API_KEY = 'zwzzEy2npXzVKvWipEfCAMQZhulkWSrWNlMZQkZwE45cdlbpjRJbvixfrOnkfTf6'
+DISQUS_FORUM_SHORTNAME = 'hjwp'
