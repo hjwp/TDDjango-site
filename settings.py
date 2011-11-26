@@ -157,4 +157,4 @@ LOGGING = {
 
 #for django-articles
 DISQUS_USER_API_KEY = 'zwzzEy2npXzVKvWipEfCAMQZhulkWSrWNlMZQkZwE45cdlbpjRJbvixfrOnkfTf6'
-DISQUS_FORUM_SHORTNAME = 'hjwp'
+DISQUS_FORUM_SHORTNAME = 'testdrivendjango'
