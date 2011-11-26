@@ -1,4 +1,4 @@
-﻿from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.conf.urls.defaults import include, patterns, url
 
 from tddjango_site.tutorials import views as tutorial_views
