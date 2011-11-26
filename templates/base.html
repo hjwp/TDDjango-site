@@ -12,6 +12,24 @@
 <body>
   
 <div id="header">
+
+  <div id="page_title">
+    <table>
+      <tr>
+        <td><a href="http://www.djangoproject.com/"><img src="/static/images/django_pony2.png" alt="The Django Pony" title="The Django Pony" /></a></td>
+
+        <td>
+          <h1>Test-Driven Django {% block main_title %}{% endblock %}</h1>
+          <h2>{% block subtitle %}{% endblock %}</h2>
+        </td>
+
+        <td><a href="http://www.voidspace.org.uk/python/articles/unittest2.shtml"><img src="/static/images/goat_drawing1.png" alt="The Testing Goat" title="The Testing Goat" /></a></td>
+      </tr>
+    </table>
+  </div>
+
+  {% include 'navigation.html' %}
+
   {% block header %}
   {% endblock %}
 </div>
@@ -22,6 +40,8 @@
 </div>
 
 <div id="footer">
+  {% include 'navigation.html' %}
+
   {% block footer %}
   {% endblock %}
 </div>

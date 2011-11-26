@@ -1,7 +1,12 @@
 <div class="menu">
   <ul>
-    <li><a href="{% url home %}">Home / About</a></li>
-    {% for p in page_numbers %}
-    <li><a href="{% url tutorial p %}">Part {{p}}</a></li>
-    {% endfor %}
+    {% if page_numbers %}
+      <li><a href="{% url home %}">Home / About</a></li>
+      {% for p in page_numbers %}
+        <li><a href="{% url tutorial p %}">Part {{p}}</a></li>
+      {% endfor %}
+    {% else %}
+      <li><a href="{% url home %}">Tutorial</a></li>
+    {% endif %}
+    <li><a href="{% url blog %}">Blog</a></li>
 </div>

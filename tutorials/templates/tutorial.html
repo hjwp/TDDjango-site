@@ -2,30 +2,15 @@
 
 {% block title %}TDDjangoTutorial{% endblock %}
 
-{% block header %}
-  <div id="page_title">
-    <table>
-      <tr>
-        <td><a href="http://www.djangoproject.com/"><img src="/static/images/django_pony2.png" alt="The Django Pony" title="The Django Pony" /></a></td>
+{% block main_title %}Tutorial{% endblock %}
 
-        <td>
-          <h1>Test-Driven Django Tutorial</h1>
-
-          {% if page_number %}
-            <h2>Part {{page_number}}</h2>
-          {% else %}
-            <h2>Home / About</h2>
-          {% endif %}
-
-          {% include 'navigation.html' %}
-        </td>
-
-        <td><a href="http://www.voidspace.org.uk/python/articles/unittest2.shtml"><img src="/static/images/goat_drawing1.png" alt="The Testing Goat" title="The Testing Goat" /></a></td>
-      </tr>
-    </table>
-  </div>
-
-{% endblock header %}
+{% block subtitle %}
+  {% if page_number %}
+    Part {{page_number}}
+  {% else %}
+    Home / About
+  {% endif %}
+{% endblock %}
 
 
 {% block content %}
@@ -36,7 +21,6 @@
 
 
 {% block footer %}
-  {% include 'navigation.html' %}
 
   <div id="disqus_thread"></div>
   <script type="text/javascript">
