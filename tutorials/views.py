@@ -1,4 +1,4 @@
-from docutils.core import publish_string
+from docutils.core import publish_parts
 import rst_directive #needed for docutils publish to do python syntax highlighting
 import os
 
@@ -15,7 +15,8 @@ def tutorial(request, number=None):
         number = int(number)
         rst_file = os.path.join(ROOT, 'source', 'tutorial%02d.rst' % number)
     with open(rst_file) as f:
-        rst_contents = mark_safe(publish_string(f.read(), writer_name='html'))
+        html_parts = publish_parts(f.read(), writer_name='html')
+        rst_contents = mark_safe(html_parts['html_body'])
     return render(request, 'tutorial.html', dict(
         rst_contents=rst_contents,
         page_number=number,
