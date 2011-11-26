@@ -39,7 +39,7 @@
 # ~~~~~~~
 
 # Set to True if you want inline CSS styles instead of classes
-INLINESTYLES = True
+INLINESTYLES = False
 
 # what colour of syntax highlighting?
 COLOUR_THEME = 'monokai'
