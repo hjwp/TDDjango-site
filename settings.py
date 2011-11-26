@@ -128,6 +128,7 @@ INSTALLED_APPS = (
     'django.contrib.syndication',
 
     'articles', # django-articles (blog)
+    'tddjango_site.blog',
     'tddjango_site.tutorials',
 )
 

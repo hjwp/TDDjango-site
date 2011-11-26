@@ -35,6 +35,15 @@ pre {
     text-align: center;
 }
 
+#article-meta h4, #article-meta p{
+    font-size: smaller;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+.centred {
+    text-align: center;
+}
+
 .menu ul { 
     display: block; 
     padding: 0px; 

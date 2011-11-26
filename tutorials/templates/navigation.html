@@ -5,8 +5,10 @@
       {% for p in page_numbers %}
         <li><a href="{% url tutorial p %}">Part {{p}}</a></li>
       {% endfor %}
+
     {% else %}
-      <li><a href="{% url home %}">Tutorial</a></li>
+      <li><a href="{% url home %}">TTDjango Tutorial</a></li>
     {% endif %}
+
     <li><a href="{% url blog %}">Blog</a></li>
 </div>

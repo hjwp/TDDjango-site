@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}hjwp's TDDjango Blog{% endblock %}
+
+{% block main_title %}Blog{% endblock %}
+
+{% block subtitle %}
+    By harry aka hjwp
+{% endblock %}
+
+
+{% block content %}
+
+    {% for article in posts %}
+      {% include 'articles/_article_content.html' %}
+      <a href="{{ article.get_absolute_url }}" title="Full article and comments">View full article and comments</a>
+      {% include 'articles/_meta.html' %}
+      <hr />
+    {% endfor %}
+
+
+{% endblock %}
+
+{% block footer %}
+    <p class="centred">
+      <a href="{% url articles_archive %}">Blog archive</a>
+      |
+      <a href="{% url articles_rss_feed_latest %}">RSS feed</a>
+      |
+      <a href="{% url articles_atom_feed_latest %}">Atom feed</a>
+    </p>
+{% endblock %}
