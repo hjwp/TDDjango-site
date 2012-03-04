@@ -82,3 +82,14 @@ pre {
     margin-top: 2ex;
     text-align: center;
 }
+
+/* hacks for captions in code blocks */
+div.highlight pre {
+    margin-bottom: 0;
+}
+
+.caption {
+    margin-top: 0;
+    text-align: right;
+    font-size: 75%;
+}

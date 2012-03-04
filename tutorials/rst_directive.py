@@ -48,11 +48,7 @@ from pygments.formatters import HtmlFormatter
 
 # The default formatter
 DEFAULT = HtmlFormatter(noclasses=INLINESTYLES, style=COLOUR_THEME)
-
-# Add name -> formatter pairs for every variant you want to use
-VARIANTS = {
-    'linenos': HtmlFormatter(noclasses=INLINESTYLES, style=COLOUR_THEME, linenos=True),
-}
+LINENOS = HtmlFormatter(noclasses=INLINESTYLES, style=COLOUR_THEME, linenos=True)
 
 
 from docutils import nodes
@@ -67,7 +63,10 @@ class Pygments(Directive):
     required_arguments = 1
     optional_arguments = 0
     final_argument_whitespace = True
-    option_spec = dict([(key, directives.flag) for key in VARIANTS])
+    option_spec = {
+            'linenos': directives.flag,
+            'filename': directives.unchanged,
+    }
     has_content = True
 
     def run(self):
@@ -78,8 +77,11 @@ class Pygments(Directive):
             # no lexer found - use the text one instead of an exception
             lexer = TextLexer()
         # take an arbitrary option if more than one is given
-        formatter = self.options and VARIANTS[self.options.keys()[0]] or DEFAULT
+        formatter = LINENOS if 'linenos' in self.options else DEFAULT
         parsed = highlight(u'\n'.join(self.content), lexer, formatter)
+        if 'filename' in self.options:
+            caption = self.options['filename']
+            parsed += '<p class="caption">' + caption + '</p>'
         return [nodes.raw('', parsed, format='html')]
 
 directives.register_directive('sourcecode', Pygments)
