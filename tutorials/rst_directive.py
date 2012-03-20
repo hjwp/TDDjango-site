@@ -57,7 +57,7 @@ from docutils.parsers.rst import directives, Directive
 from pygments import highlight
 from pygments.lexers import get_lexer_by_name, TextLexer
 
-class Pygments(Directive):
+class PygmentsWithFilenameCaption(Directive):
     """ Source code syntax hightlighting.
     """
     required_arguments = 1
@@ -84,5 +84,4 @@ class Pygments(Directive):
             parsed += '<p class="caption">' + caption + '</p>'
         return [nodes.raw('', parsed, format='html')]
 
-directives.register_directive('sourcecode', Pygments)
 
