@@ -1,7 +1,7 @@
 #content, #header, #footer {
     margin-left: 50px;
     margin-right: 50px;
-    font-family: DejaVu Sans Light, serif;
+    font-family: DejaVu Sans Light, sans-serif;
 }
 
 #content h1, #content h2, #content h3 {
