@@ -97,6 +97,17 @@ So, I like to put in place some mitigation practices:
 4. In big classes, I ask people to "pair program", or work in teams, to bring the "effective" headcount down - I like to keep it below 20 teams.  That also helps because you'll usually find that people who are a bit more experienced can help out the beginners.
 
 
+Aside from that, I just like to keep things lively and entertaining.  Here's what a past attendee said:
+
+
+
+"HUGE thanks for your great presentation at europython. I loved your presentation style (especially how you jumped on various chairs and tables)"
+
+http://www.tdd-django-tutorial.com/blog/articles/2012/tutorials-updated-django-14-and-its-weird-new-fold/#comment-612104353
+
+(no chairs or tables were harmed during the tutorial)
+
+
 Audience / prerequisites
 ------------------------
 
@@ -108,7 +119,7 @@ On the other hand, having people arrive with all the necessary software preinsta
 Co-presenter / Assistants
 -------------------------
 
-I'm keen to have a co-presenter, especially if we anticipate a larger class size.  I'm hoping I can call on Jonathan Hartley, who's done it with me before, and has presented at PyCon in the past... But he has a new baby, so failing that I should be able to rope in one of my colleagues from PythonAnywhere.  A tutorial assistant could potentially work, as long as they were familiar with the material (ie, if they could find time to go through the tutorial online)
+I'm keen to have a co-presenter, especially if we anticipate a larger class size.  I'm hoping I can call on Jonathan Hartley, who's done it with me before, and is a regular PyCon attendee & presenter... But he has a new baby, so failing that I should be able to rope in one of my colleagues from PythonAnywhere.  A "tutorial assistant" could potentially work, as long as they were familiar with the material (ie, if they could find time to go through the tutorial online)
 
 
 
@@ -117,7 +128,10 @@ Video of this workshop at EuroPython 2012
 
 https://www.youtube.com/watch?v=WfyoC0h9QKA
 
-Skip to about 9 mins in for it to actually begin.  Sound occasionally fails, technical problems with the EP2012 a/v setup I guess.  Here's another video of me presenting PythonAnywhere at PyConUK
+Skip to about 9 mins in for it to actually begin.  Sound occasionally fails, technical problems with the EP2012 a/v setup I guess.  
+
+Here's another video of me presenting a lightning talk on a different topic (PythonAnywhere) at PyConUK
+
 https://www.youtube.com/watch?v=e6NLAbgmRZ4
 
 
