@@ -81,6 +81,11 @@ pre {
     border: 1px solid #d8d8d8; 
     color: black; 
 } 
+
+#id_flattr_div {
+    float: right;
+}
+
 #footer_links {
     margin-top: 2ex;
 }
