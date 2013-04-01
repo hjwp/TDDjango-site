@@ -7,7 +7,7 @@ from django.utils.safestring import mark_safe
 from tddjango_site.tutorials.rst_directive import PygmentsWithFilenameCaption
 
 ROOT = os.path.split(os.path.dirname(__file__))[0]
-PAGE_NUMBERS = [1, 2, 3, 4, 5]
+PAGE_NUMBERS = [1, 2, 3, 4, 5, 6]
 
 def tutorial(request, number=None):
     directives.register_directive('sourcecode', PygmentsWithFilenameCaption)

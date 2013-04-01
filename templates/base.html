@@ -1,8 +1,8 @@
 <html>
 <head>
   <title>{% block title %}{% endblock %}</title>
-  <link rel="stylesheet" type="text/css" href="/static/base.css" /> 
-  <link rel="stylesheet" type="text/css" href="/static/pygments.css" /> 
+  <link rel="stylesheet" type="text/css" href="/static/base.css" />
+  <link rel="stylesheet" type="text/css" href="/static/pygments.css" />
   <meta name="keywords" content="TDD, test driven, Django, Selenium, {% block meta-keywords %}{% endblock %}" />
   <meta name="description" content="Blog accompanying my test-driven Django (with Selenium) tutorial; {% block meta-description %}{% endblock %}" />
   {% block extra-head %}{% endblock %}
@@ -14,16 +14,23 @@
          s.type = 'text/javascript';
          s.async = true;
          s.src = 'http://api.flattr.com/js/0.6/load.js?mode=auto';
-         t.parentNode.insertBefore(s, t);     
-         })(); 
+         t.parentNode.insertBefore(s, t);
+         })();
      /* ]]> */
-   </script> 
+   </script>
 </head>
 
 
 <body>
-  
+
 <div id="header">
+    <div id="id_book_link">
+        <a href="http://www.anrdoezrs.net/click-7079286-11260198?url=http%3A%2F%2Fshop.oreilly.com%2Fproduct%2F0636920029533.do%3Fcmp%3Daf-code-book-product_cj_9781449367794_%7BPID%7D&cjsku=0636920029533" target="_top">
+            <h3>Get the book:<h3>
+            <img src="http://akamaicovers.oreilly.com/images/0636920029533/rc_cat.gif" border="0" alt="Test-Driven Development with Python"/>
+        </a>
+        <img src="http://www.ftjcfx.com/image-7079286-11260198" width="1" height="1" border="0"/>
+    </div>
 
   <div id="page_title">
     <table>
@@ -36,8 +43,11 @@
         </td>
 
         <td><a href="http://www.voidspace.org.uk/python/articles/unittest2.shtml"><img src="/static/images/goat_drawing1.png" alt="The Testing Goat" title="The Testing Goat" /></a></td>
+
       </tr>
     </table>
+
+
   </div>
 
   {% include 'navigation.html' %}
@@ -60,7 +70,7 @@
       <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">TDD Django Tutorial</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://tdd-django-tutorial.com" property="cc:attributionName" rel="cc:attributionURL">Harry J.W. Percival</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>
       </p>
     </div>
-  
+
 </div>
 
 </body>
