@@ -63,6 +63,8 @@ pre {
 
 #id_book_link {
     float: right;
+    width: 200px;
+    margin-left: 10px;
 }
 
 
